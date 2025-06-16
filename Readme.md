@@ -131,17 +131,17 @@ deactivate
 
 You must provide the following media files for the pipeline to work. Place them in the specified directories:
 
-- **Character Voice Sample: (Already Available)**
+- **Character Voice Sample: [(Already Available)](https://drive.google.com/drive/folders/1cUlcLsI0I_aKmxTRqCqJtHjgA-Nt5zyC?usp=sharing)**
 
   - **File:** A 5-15 second, clean `.mp3` or `.wav` audio clip of the character's voice.
   - **Location:** `chatterbox/peter.mp3`
 
-- **Gameplay Video: (Already Available)**
+- **Gameplay Video: [(Already Available)](https://drive.google.com/drive/folders/1cUlcLsI0I_aKmxTRqCqJtHjgA-Nt5zyC?usp=sharing)**
 
   - **File:** A video of gameplay footage (e.g., Subway Surfers, Minecraft, etc.).
   - **Location:** `video_assets/background_gameplay.mp4`
 
-- **Character Avatar: (Already Available)**
+- **Character Avatar: [(Already Available)](https://drive.google.com/drive/folders/1cUlcLsI0I_aKmxTRqCqJtHjgA-Nt5zyC?usp=sharing)**
   - **File:** A transparent `.png` image of the character.
   - **Location:** `video_assets/peter_avatar.png`
 
