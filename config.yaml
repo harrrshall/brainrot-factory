@@ -1,0 +1,257 @@
+# Twitter Analyzer Configuration File
+
+# Rate limiting settings
+rate_limiting:
+  requests_per_minute: 10
+  min_delay: 2 # seconds
+  max_delay: 8 # seconds
+  retry_attempts: 3
+  retry_delay: 5 # seconds
+
+# Screenshot settings
+screenshot:
+  width: 1200
+  height: 800
+  quality: "high"
+  format: "png"
+  mobile_simulation: false
+  full_page: true
+  crop_to_tweet: true
+
+# Analysis settings
+analysis:
+  sentiment_threshold: 0.1
+  engagement_weights:
+    likes: 1.0
+    retweets: 2.0
+    replies: 1.5
+    views: 0.1
+  viral_thresholds:
+    high: 6
+    medium: 3
+    low: 0
+
+# Browser automation settings
+browser:
+  headless: false # Set to true for headless operation
+  window_size:
+    width: [1200, 1920] # Random range
+    height: [800, 1080] # Random range
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Proxy settings (optional)
+proxy:
+  enabled: false
+  rotation: true
+  proxies: []
+  # Example proxy format:
+  # - "http://username:password@proxy1.com:8080"
+  # - "http://username:password@proxy2.com:8080"
+
+# Anti-detection settings
+anti_detection:
+  mouse_movements: true
+  random_scrolling: true
+  viewport_randomization: true
+  session_persistence: true
+  cookie_management: true
+  request_header_rotation: true
+
+# Data storage settings
+storage:
+  base_directory: "twitter_analysis"
+  organize_by_date: true
+  organize_by_category: true
+  backup_enabled: true
+  compression: false
+
+# Categories and keywords for classification
+categories:
+  knowledge:
+    keywords:
+      [
+        "tutorial",
+        "learn",
+        "education",
+        "how-to",
+        "guide",
+        "tip",
+        "teach",
+        "lesson",
+        "course",
+        "study",
+      ]
+    weight: 1.0
+
+  controversial:
+    keywords:
+      [
+        "debate",
+        "opinion",
+        "politics",
+        "argue",
+        "controversial",
+        "disagree",
+        "conflict",
+        "dispute",
+      ]
+    weight: 1.2
+
+  informative:
+    keywords:
+      [
+        "news",
+        "update",
+        "report",
+        "breaking",
+        "announcement",
+        "information",
+        "facts",
+        "data",
+      ]
+    weight: 1.0
+
+  funny:
+    keywords:
+      [
+        "lol",
+        "funny",
+        "meme",
+        "joke",
+        "humor",
+        "hilarious",
+        "laugh",
+        "comedy",
+        "amusing",
+      ]
+    weight: 0.8
+
+  thoughtprovoking:
+    keywords:
+      [
+        "think",
+        "insight",
+        "perspective",
+        "philosophy",
+        "deep",
+        "reflection",
+        "wisdom",
+        "contemplation",
+      ]
+    weight: 1.1
+
+  trending:
+    keywords:
+      [
+        "viral",
+        "trending",
+        "hot",
+        "popular",
+        "buzz",
+        "latest",
+        "current",
+        "now",
+      ]
+    weight: 1.3
+
+  business:
+    keywords:
+      [
+        "business",
+        "career",
+        "professional",
+        "industry",
+        "work",
+        "corporate",
+        "startup",
+        "entrepreneur",
+      ]
+    weight: 1.0
+
+  actionable:
+    keywords:
+      [
+        "tip",
+        "action",
+        "do",
+        "step",
+        "guide",
+        "how",
+        "implement",
+        "apply",
+        "execute",
+      ]
+    weight: 1.1
+
+# Reporting settings
+reporting:
+  generate_html: true
+  generate_pdf: false
+  include_charts: true
+  include_screenshots: true
+  chart_style: "seaborn"
+  color_scheme: "twitter"
+
+# Logging settings
+logging:
+  level: "INFO" # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file_rotation: true
+  max_file_size: "10MB"
+  backup_count: 5
+  console_output: true
+
+# Security settings
+security:
+  encrypt_data: false
+  secure_deletion: false
+  audit_trail: true
+  privacy_mode: false
+
+# Performance settings
+performance:
+  parallel_processing: true
+  max_workers: 4
+  memory_optimization: true
+  cache_enabled: true
+  cache_size: 100 # Number of cached items
+
+# Notification settings (optional)
+notifications:
+  enabled: false
+  email:
+    smtp_server: ""
+    smtp_port: 587
+    username: ""
+    password: ""
+    to_address: ""
+  webhook:
+    url: ""
+    method: "POST"
+
+# API settings (for future Twitter API integration)
+api:
+  twitter_api_key: ""
+  twitter_api_secret: ""
+  twitter_bearer_token: ""
+  rate_limit_handling: true
+
+# Export settings
+export:
+  formats: ["json", "csv", "excel"]
+  include_raw_data: true
+  include_analysis: true
+  include_metadata: true
+  compression: false
+
+# Advanced features
+features:
+  real_time_monitoring: false
+  sentiment_analysis: true
+  trend_detection: true
+  influence_scoring: true
+  network_analysis: false
+  image_analysis: false
+  video_analysis: false

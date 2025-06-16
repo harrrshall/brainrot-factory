@@ -1,0 +1,53 @@
+# Enhanced Video Generation Configuration
+
+paths:
+  video_assets: "video_assets"
+  screenshots: "twitter_analysis/screenshots"
+  audio: "chatterbox/audio_production/final_audio"
+  narrations: "twitter_analysis/narrations"
+  output: "final_videos"
+  peter_avatar: "video_assets/images/peter.jpeg"
+  background_video: "video_assets/video"
+
+video:
+  resolution: [1080, 1920]  # 9:16 for mobile
+  fps: 60
+  format: "mp4"
+  codec: "libx264"
+  preset: "medium"
+  crf: 23
+
+visuals:
+  avatar_size: 280
+  avatar_position: {x: "W-w-40", y: "H-h-40"}
+  screenshot_duration: 8
+  screenshot_fade_duration: 1.0
+  progress_bar: true
+  branding: true
+
+captions:
+  font: "Arial Black"
+  font_size: 52
+  color: "&HFFFFFF"
+  outline_color: "&H000000"
+  outline_width: 4
+  max_words_per_line: 3
+  position: "center"
+  animation: "typewriter"
+
+audio:
+  whisper_model: "base"
+  normalize: true
+  background_music: false
+  background_volume: 0.1
+
+platforms:
+  instagram:
+    max_duration: 90
+    quality: "high"
+  tiktok:
+    max_duration: 60
+    quality: "medium"
+  youtube:
+    max_duration: 60
+    quality: "high"
