@@ -51,10 +51,9 @@ The final output is a ready-to-upload video with all the essential elements for 
 | **Voice-Cloned Narration** | High-quality audio commentary in the chosen character's voice.          |
 | **Dynamic Captions**       | Large, outlined text appears word-by-word, synchronized with the audio. |
 
-<p align="center">
-  <img src="https://i.imgur.com/tHqgR7c.png" alt="Video structure diagram" width="600">
-  [🎥](./path/to/your/video.mp4)
-</p>
+
+### 🎥 Example Output
+[**Watch the full example video →**](./1932859979469648326_casual_1749838849.mp4)
 
 ## Prerequisites
 
