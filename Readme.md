@@ -53,6 +53,7 @@ The final output is a ready-to-upload video with all the essential elements for 
 
 <p align="center">
   <img src="https://i.imgur.com/tHqgR7c.png" alt="Video structure diagram" width="600">
+  [🎥](./path/to/your/video.mp4)
 </p>
 
 ## Prerequisites
