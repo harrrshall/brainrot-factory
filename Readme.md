@@ -1,4 +1,4 @@
-# Brainrot Factory 🤖: Automated Social Media Content Pipeline
+# Brainrot Factory 🤖
 
 Welcome to Brainrot Factory! This is a complete, multi-stage pipeline that automates the creation of short-form videos for platforms like TikTok, YouTube Shorts, and Instagram Reels.
 
@@ -81,7 +81,7 @@ Follow these one-time setup steps to prepare your project.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/brainrot-factory.git
+git clone https://github.com/harrrshall/brainrot-factory
 cd brainrot-factory
 ```
 
